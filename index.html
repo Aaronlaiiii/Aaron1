@@ -1,0 +1,30 @@
+<html>
+<head>
+<title> Important information like
+the name of your website goes
+here. </title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.0/buzz.min.js"></script>
+</head>
+<body style="background-color: rgb(107, 107, 107);">
+<h1> </h1>
+<h2></h2>
+<p>  <br></p>
+
+<img id="dount 1" src="img/donut_01.png" onmouseover="this.src='img/donut_02.png';" onmouseout="this.src='img/donut_01.png';" width="400"> 
+<img id="dount 2" src="img/donut_02.png" width="400"> 
+<img id="dount 3" src="img/donut_03.png" width="400"> 
+<script>
+    var sound1 = new buzz.sound("sound/glitch1.mp3");
+    var sound2 = new buzz.sound("sound/glitch2.mp3");
+    var sound3 = new buzz.sound("sound/glitch3.mp3");
+   
+
+    window.onload = function() {
+        document.getElementById('dount 1').addEventListener('click', function () {sound1.play(); });  
+        document.getElementById('dount 2').addEventListener('click', function () {sound2.play(); });
+        document.getElementById('dount 3').addEventListener('click', function () {sound3.play(); });
+       
+    }  
+</script>  
+</body>
+</html>
